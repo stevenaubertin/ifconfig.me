@@ -1,4 +1,5 @@
 # ipconfig
+
 Simple bash script to get ip adresses.
 ===
 
