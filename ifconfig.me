@@ -1,0 +1,14 @@
+#!/bin/bash
+
+trim() {
+    local var="$*"
+    var="${var#"${var%%[![:space:]]*}"}"   # remove leading whitespace characters
+    var="${var%"${var##*[![:space:]]}"}"   # remove trailing whitespace characters
+    echo -n "$var"
+}
+
+i=`dig +short myip.opendns.com @resolver1.opendns.com`
+echo "Public : $i"
+i=`ifconfig | grep inet | grep 192`
+i=`trim $i`
+echo "Local  : $i"
