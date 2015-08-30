@@ -1,7 +1,7 @@
-# ipconfig
+ipconfig.me
+===========
 
-Simple bash script to get ip adresses.
-===
+#### Simple bash script to get ip adresses.
 
 **usage** : 
 
