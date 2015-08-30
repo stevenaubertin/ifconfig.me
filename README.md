@@ -1,4 +1,4 @@
-ipconfig.me
+ifconfig.me
 ===========
 
 #### Simple bash script to get ip adresses.
